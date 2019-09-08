@@ -23,4 +23,4 @@ git commit -m 'deploy'
 git push -f git@github.com:Polynom/website.git master:gh-pages
 
 cd -
-bas
+bash

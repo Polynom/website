@@ -89,7 +89,7 @@ export default {
       let animationEndTime = [null, null, null]
 
       // Trigger redraw
-      paper.view.onFrame = function onFrame (event) {
+      paper.view.onFrame = function onFrame () {
         let now = Date.now()
 
         for (let i = 0; i < paths.length; i++) {
