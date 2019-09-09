@@ -20,7 +20,7 @@
       </div>
       <div class="" style="margin-top: 10%">
         <h4> You name it:  </h4>
-        <p> <a href="mailto:root@polynom.com"> root@polynom.com</a> <a href="../../static/polynom-pgp" target="_blank"> (PGP) </a> </p>
+        <p> <a href="mailto:root@polynom.com"> root@polynom.com</a> <a href="./polynom-pgp" target="_blank" download> (PGP) </a> </p>
         <p id="mandatory"> POLYNOM OÜ (14418967), Sepapaja 6, 15551, Tallinn, Estonia </p>
       </div>
     </div>
