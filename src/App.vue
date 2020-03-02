@@ -147,11 +147,11 @@ export default {
   }
 
   .trans {
-    -webkit-animation: trans 2s ease-in-out;
-    -o-animation: trans 2s ease-in-out;
-    -ms-animation: trans 2s ease-in-out;
-    -moz-animation: trans 2s ease-in-out;
-    animation: trans 2s ease-in-out;
+    -webkit-animation: trans 1s ease-in-out;
+    -o-animation: trans 1.5s ease-in-out;
+    -ms-animation: trans 1.5s ease-in-out;
+    -moz-animation: trans 1.5s ease-in-out;
+    animation: trans 1.5s ease-in-out;
     animation-fill-mode: forwards;
   }
 

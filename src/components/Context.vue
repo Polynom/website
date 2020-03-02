@@ -6,8 +6,8 @@
       <div class="one-half culumn" style="margin-top: 25%">
         <div class="nav">
           <a href="/#/">
+            <span id="backNav">BACK</span>
             <img id="logo" src="../assets/backs.png">
-            <span id="backNav"> BACK </span>
           </a>
         </div>
 <!--        <h1> ../</h1>-->
@@ -46,9 +46,11 @@ export default {
   height: 54px;
   margin: 12px 0px;
   opacity: 0.1;
+  visibility: hidden;
 }
 
 #backNav{
+  border-bottom: 1px dotted;
   position: absolute;
   top: 4%;
   -webkit-animation: pulse 3s infinite ease-in-out;
