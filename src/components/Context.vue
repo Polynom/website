@@ -7,7 +7,7 @@
         <div class="nav">
           <a href="/#/">
             <span id="backNav">BACK</span>
-            <img id="logo" src="../assets/backs.png">
+            <img id="logo" src="../assets/back.png">
           </a>
         </div>
 <!--        <h1> ../</h1>-->
@@ -82,12 +82,12 @@ h4 > a {
 }
 
 h4 > a::after {
-  background-image: url('../assets/backs.png');
-  background-size: 10px 10px;
+  background-image: url('../assets/back.png');
+  background-size: 5px 10px;
   content: "";
   display: inline-block;
   height: 10px;
-  width: 10px;
+  width: 5px;
   position: absolute;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);

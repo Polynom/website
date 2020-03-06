@@ -126,10 +126,11 @@ export default {
   @import 'styles/normalize.css';
   @import "styles/skeleton.css";
 
-  html, body, h2 {
+  html, body {
     font-family: Rift;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     color: #000000;
+
   }
 
   #bg {
@@ -143,7 +144,7 @@ export default {
 
   #bg-canvas {
     width: 100%;
-    height: 99%;
+    height: 99.9%;
   }
 
   .trans {
@@ -157,7 +158,7 @@ export default {
 
   @font-face {
     font-family: 'Rift';
-    src: url('assets/font/RiftSoft-Regular.otf');
+    src: url('assets/font/Rift-Regular.otf');
     font-weight: normal;
     font-style: normal;
   }

@@ -9,7 +9,7 @@
           <img id="logo-w" class="hidden" src="../assets/polynom_logo.png">
           <img id="logo" src="../assets/polynom_logo.png">
           <h2 id="cao" class="hidden"> Chao Ab Ordo </h2>
-          <h2 id="cfo"> Chaos from Order </h2>
+          <h2 id="cfo"> Chaos comes from Order </h2>
 
         </div>
 
@@ -18,7 +18,7 @@
           <!-- <h3> <router-link to="/team"> We</router-link> are</h3>-->
           <ul>
             <li> <router-link to="/build">building</router-link> decentralized applications </li>
-            <li> <router-link to="/research">researching</router-link> expressivity of tech </li>
+            <li> <router-link to="/research">researching</router-link> technology </li>
             <li> <router-link to="/organize">organizing</router-link> events </li>
             <li> <router-link to="/support">supporting</router-link> communities </li>
           </ul>
@@ -90,6 +90,7 @@ export default {
     filter: invert(100%);
     position: absolute;
   }
+
   #overtrans {
     margin-bottom: 0px;
   }
@@ -109,6 +110,7 @@ export default {
 
   #cfo {
     color: #000000;
+    visibility: hidden;
   }
 
   .transText {

@@ -13,7 +13,7 @@ const state = {
     item2: {
       logo: '',
       name: 'Paralelni Polis',
-      description: 'Unique artistic concept consisting of a "cryptocurrency-only" cafe & coworking space, event venue and a hackerspace.',
+      description: 'Unique artistic concept consisting of a "cryptocurrency-only" cafe & coworking space, event venue and hackerspace.',
       link: 'https://www.paralelnipolis.cz/o-nas/en/'
     }
   }

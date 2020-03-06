@@ -13,7 +13,7 @@ const state = {
     item2: {
       logo: '',
       name: 'Meaning',
-      description: 'It\'s just turtles all the way down! No, this is not supposed to make any sense to a stranger.',
+      description: '"It is just turtles all the way down!" No, this is not supposed to make any sense to a stranger.',
       link: ''
     },
     item3: {
