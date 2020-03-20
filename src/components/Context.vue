@@ -2,12 +2,12 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <div class="row">
-      <div class="one-half culumn" style="margin-top: 25%">
+    <div class="row top">
+      <div class="one-half">
         <div class="nav">
           <a href="/#/">
-            <span id="backNav">BACK</span>
             <img id="logo" src="../assets/back.png">
+            <span id="backNav">BACK</span>
           </a>
         </div>
 <!--        <h1> ../</h1>-->
@@ -43,16 +43,19 @@ export default {
 
 <style scoped>
 #logo {
-  height: 54px;
+  height: 14px;
+  padding: 20px 0px;
   margin: 12px 0px;
-  opacity: 0.1;
-  visibility: hidden;
+  margin-right: 10px;
+  /*display: inline;*/
 }
 
 #backNav{
-  border-bottom: 1px dotted;
+  /*border-bottom: 1px dotted;*/
   position: absolute;
-  top: 4%;
+  padding: 26px 0px;
+  /*top:  3.5%;*/
+  /*display: inline;*/
   -webkit-animation: pulse 3s infinite ease-in-out;
   -o-animation: pulse 3s infinite ease-in-out;
   -ms-animation: pulse 3s infinite ease-in-out;
@@ -78,7 +81,11 @@ h2 {
 h4 > a {
   color: #000;
   text-decoration: none;
-  border-bottom: 2px dotted;
+  /*border-bottom: 2px dotted;*/
+}
+
+h4 > a:hover {
+  color: #1EAEDB;
 }
 
 h4 > a::after {
@@ -107,6 +114,10 @@ h4 > a::after {
   0% { opacity: 0.4; }
   50% { opacity: 1; }
   100% { opacity: 0.4; }
+}
+
+.top {
+  margin-top: 25%;
 }
 
 </style>

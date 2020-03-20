@@ -2,8 +2,8 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <div class="row">
-      <div class="one-half" style="margin-top: 25%">
+    <div class="row top">
+      <div class="one-half">
 
         <div>
           <img id="logo-w" class="hidden" src="../assets/polynom_logo.png">
@@ -47,6 +47,18 @@ export default {
     }
   },
   methods: {
+    transOut: () => {
+      document.getElementById('bg').classList.remove('trans')
+      document.getElementById('transparency').classList.remove('transText')
+      document.getElementById('logo').classList.remove('hidden')
+      document.getElementById('logo-w').classList.add('hidden')
+
+      document.getElementById('cfo').classList.remove('hidden')
+      document.getElementById('cao').classList.add('hidden')
+
+      document.getElementById('nav').classList.remove('hidden')
+      document.getElementById('contact').classList.remove('hidden')
+    },
     transTog: () => {
       if (document.getElementById('bg').classList.length === 0) {
         document.getElementById('bg').classList.add('trans')
@@ -60,7 +72,6 @@ export default {
 
         document.getElementById('nav').classList.add('hidden')
         document.getElementById('contact').classList.add('hidden')
-
       } else {
         document.getElementById('bg').classList.remove('trans')
         document.getElementById('transparency').classList.remove('transText')
@@ -96,7 +107,12 @@ export default {
   }
 
   #transparency {
-    border-bottom: 1px dotted;
+    /*border-bottom: 1px dotted;*/
+    -webkit-animation: pulse 5s infinite ease-in-out;
+    -o-animation: pulse 5s infinite ease-in-out;
+    -ms-animation: pulse 5s infinite ease-in-out;
+    -moz-animation: pulse 5s infinite ease-in-out;
+    animation: pulse 5s infinite ease-in-out;
   }
   #transparency:hover {
     cursor: pointer;
@@ -129,7 +145,7 @@ export default {
   a {
     color: #000;
     text-decoration: none;
-    border-bottom: 2px dotted;
+    /*border-bottom: 2px dotted;*/
     font-weight: 600;
   }
 
@@ -139,7 +155,7 @@ export default {
 
   ul {
     list-style-type: none;
-    margin: 0px 0px 20px 20px;
+    margin: 0px 0px 20px 0px;
     padding: 0;
   }
 
@@ -147,4 +163,19 @@ export default {
     visibility: hidden;
   }
 
+  .top {
+    margin-top: 25%;
+  }
+
+  @-webkit-keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+  }
+
+  @keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+  }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="bg">
+    <div id="bg" @click="transOut">
       <canvas id="bg-canvas" resize="true"></canvas>
     </div>
     <router-view/>
@@ -114,6 +114,18 @@ export default {
         yAxis = window.innerHeight
       }
       paper.view.draw()
+    },
+    transOut: () => {
+      document.getElementById('bg').classList.remove('trans')
+      document.getElementById('transparency').classList.remove('transText')
+      document.getElementById('logo').classList.remove('hidden')
+      document.getElementById('logo-w').classList.add('hidden')
+
+      document.getElementById('cfo').classList.remove('hidden')
+      document.getElementById('cao').classList.add('hidden')
+
+      document.getElementById('nav').classList.remove('hidden')
+      document.getElementById('contact').classList.remove('hidden')
     }
   },
   mounted () {
